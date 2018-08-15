@@ -1,6 +1,15 @@
 body{
     background-color: turquoise;
 }
+#container{
+    font-size: 20px;
+    width: 600px;
+    height:500px;
+    margin: 0 auto;
+    margin-top:55px ;
+    background-color: darkslateblue;
+    padding: 20px;
+}
 ul{
     list-style-type: none;
     overflow: hidden;
@@ -22,15 +31,6 @@ li > a{
     background-color:#d90000;
     color:#fff;
 }
-#container{
-    font-size: 20px;
-    width: 600px;
-    height:500px;
-    margin: 0 auto;
-    margin-top:80px ;
-    background-color: darkslateblue;
-    padding: 20px;
-}
 input[type=text],[type=date] {
     display: inline-block;
     font-size: 20px;
@@ -42,10 +42,10 @@ input[type=text],[type=date] {
 }
 input[type=submit]{
     font-size: 20px;
-    width: 480px;
+    width: 524px;
     border-radius: 5px;
-    margin: 0 auto;
     padding: 14px 20px;
     border: 1px solid #000000;
     background-color: lightseagreen;
+    box-sizing: padding-box;
 }
