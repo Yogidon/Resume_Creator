@@ -1,0 +1,51 @@
+body{
+    background-color: turquoise;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+li > a{
+    display: block;
+    color: green;
+    background-color: yellow;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+.active{
+    background-color:#d90000;
+    color:#fff;
+}
+#container{
+    font-size: 20px;
+    width: 600px;
+    height:500px;
+    margin: 0 auto;
+    margin-top:80px ;
+    background-color: darkslateblue;
+    padding: 20px;
+}
+input[type=text],[type=date] {
+    display: inline-block;
+    font-size: 20px;
+    width: 480px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    border: 1px solid #000000;
+}
+input[type=submit]{
+    font-size: 20px;
+    width: 480px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    border: 1px solid #000000;
+    background-color: lightseagreen;
+}

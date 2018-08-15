@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a class="link active" href="#">HOME</a></li>
+            <li><a class="link" href="#">ABOUT</a></li>
+            <li><a class="link" href="#">FORM</a></li>
+            <li><a class="link" href="#">DATABASE</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="container" >
+    <form autocomplete="off" id="form" method="POST" action="/post-feedback">
+        <lable for="name">Name</lable><br>
+        <input autocomplete="off" id="name" name="name" type="text"><br>
+        <lable for="course">Course</lable><br>
+        <input autocomplete="off" type="text" id="course" name="course"><br>
+        <lable for="dob">Date of Birth</lable><br>
+        <input autocomplete="off" id="dob" name="dob" type="date"><br>
+        <lable for="age">Age</lable><br>
+        <input autocomplete="off" type="text" id="age" name="age"><br>
+        <input type="submit" id="submit"><br>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
