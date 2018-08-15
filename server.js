@@ -2,9 +2,7 @@ const express = require('express');
 const app = express();
 const hbs = require('hbs');
 const PORT = process.env.PORT || 3000;
-const mongodb = require('mongodb');
 const bodyParser = require('body-parser');
-const dbConn = mongodb.MongoClient.connect('mongodb://localhost:27017');
 const mongoose = require('mongoose');
 
 hbs.registerPartials('./views/partials');
@@ -33,18 +31,13 @@ async function createCourse(name, courses, dob,age ){
     console.log(result);
 }
 
-mongoose.connect('mongodb://localhost/admin')
-    .then(() => {
-        console.log('Connected to MongoDB')
-    })
-    .catch(err => console.error('Could not connect to mongodb ...', err));
-
 app.post('/post-feedback', function (req, res) {
-    dbConn.then(function() {
-        console.log(req.body);
-        createCourse(req.body.name,req.body.course,req.body.dob,req.body.age)
-
-    });
+    mongoose.connect('mongodb://localhost/admin')
+        .then(() => {
+            console.log('Connected to MongoDB')
+            createCourse(req.body.name,req.body.course,req.body.dob,req.body.age)
+        })
+        .catch(err => console.error('Could not connect to mongodb ...', err));
     res.send('Data received:\n' + JSON.stringify(req.body));
 });
 
