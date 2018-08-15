@@ -1,14 +1,21 @@
 body{
-    background-color: turquoise;
+    background-color: #324D5C;
 }
 #container{
-    font-size: 20px;
-    width: 600px;
-    height:500px;
-    margin: 0 auto;
-    margin-top:55px ;
-    background-color: darkslateblue;
+    font-size: 25px;
+    width: 800px;
+    margin: 55px auto 0;
+    background-color: #E37B40;
     padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+#form{
+    margin: 0 auto;
+    text-align: center;
 }
 ul{
     list-style-type: none;
@@ -22,17 +29,13 @@ li{
 }
 li > a{
     display: block;
-    color: green;
-    background-color: yellow;
+    color: #F0CA4D;
+    background-color: #14B278;
     padding: 16px 20px;
     text-decoration: none;
 }
-.active{
-    background-color:#d90000;
-    color:#fff;
-}
 input[type=text],[type=date] {
-    display: inline-block;
+    display: block;
     font-size: 20px;
     width: 480px;
     border-radius: 5px;
@@ -41,11 +44,38 @@ input[type=text],[type=date] {
     border: 1px solid #000000;
 }
 input[type=submit]{
-    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
     width: 524px;
     border-radius: 5px;
     padding: 14px 20px;
     border: 1px solid #000000;
-    background-color: lightseagreen;
-    box-sizing: padding-box;
+    background-color: #E37B40;
+}
+.l{
+    font-family: "Lobster", serif;
+    font-size: 20px;
+}
+@font-face {
+    font-family: simple;
+    src:url('../font/simple.ttf');
+}
+@font-face {
+    font-family: au;
+    src: url("../font/au.otf");
+}
+@font-face {
+    font-family: aqua;
+    src: url("../font/aqua.ttf");
+}
+.aqua{
+    font-family: aqua;
+}
+.au{
+    font-family: au;
+}
+.simple{
+    font-family: simple;
+    font-size: 40px;
 }
