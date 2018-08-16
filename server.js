@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/',express.static('./public'));
 
 const courseSchema = new mongoose.Schema({
-    name : String,
+    name : {type:String, required : true},
     course : String,
     dob : { type: Date, default: Date.now},
     age : Number,
@@ -29,8 +29,13 @@ async function createCourse(name,courses,dob,age,gender ){
         age:age,
         gender:gender
     });
-    const result = await course.save();
-    console.log(result);
+    try{
+        const result = await course.save();
+        console.log(result);
+    }
+    catch (e) {
+        console.log(`The Error is ${e.message}`)
+    }
 }
 
 app.post('/submit', function (req, res) {

@@ -52,6 +52,10 @@ input[type=submit]{
     padding: 14px 20px;
     border: 1px solid #000000;
     background-color: #E37B40;
+
+}
+input[type=submit]:hover{
+    background-color: indianred;
 }
 .l{
     font-family: "Lobster", serif;
