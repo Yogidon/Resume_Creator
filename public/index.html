@@ -10,7 +10,7 @@
 <header>
     <nav>
         <ul class="au">
-            <li><a class="link active" href="#">HOME</a></li>
+            <li><a class="link" href="/show">HOME</a></li>
             <li><a class="link" href="#">ABOUT</a></li>
             <li><a class="link" href="#">FORM</a></li>
             <li><a class="link" href="#">DATABASE</a></li>
@@ -18,9 +18,11 @@
     </nav>
 </header>
 <div id="container" >
-    <form autocomplete="off" id="form" class="aqua" method="POST" action="/submit">
+    <form autocomplete="off" id="form" class="aqua" method="POST" action="">
         <lable for="name">Name</lable><br>
         <input autocomplete="off" id="name" name="name" type="text"><br>
+        <lable for="email">Email Address</lable><br>
+        <input autocomplete="off" type="text" id="email" name="email"><br>
         <lable for="course">Course</lable><br>
         <input autocomplete="off" type="text" id="course" name="course"><br>
         <lable for="dob">Date of Birth</lable><br>
@@ -29,10 +31,12 @@
         <input autocomplete="off" type="text" id="age" name="age"><br>
         <label for="gender">Gender</label><br>
         <input autocomplete="off" type="text" id="gender" name="gender"><br>
-        <input type="submit" id="submit"><br>
+        <input class="au" type="submit" id="submit"><br>
     </form>
 </div>
-<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="app.js"></script>-->
+<button id="btn">Clickk me</button>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="app.js"></script>
+
 </body>
 </html>
