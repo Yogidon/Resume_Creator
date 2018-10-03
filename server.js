@@ -11,6 +11,7 @@ hbs.registerPartials('./views/partials');
 app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/',express.static('./public'));
+app.use('/',express.static('./public/database'));
 app.use('/',express.static('./font'));
 app.use(fonts({
     'csspath': '/public',

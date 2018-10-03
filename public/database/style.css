@@ -1,0 +1,36 @@
+body{
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+}
+#data{
+    font-size: 25px;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: #E37B40;
+}
+@font-face {
+    font-family: simple;
+    src:url('../../font/simple.ttf');
+}
+@font-face {
+    font-family: au;
+    src: url("../../font/au.otf");
+}
+@font-face {
+    font-family: aqua;
+    src: url("../../font/aqua.ttf");
+}
+.aqua{
+    font-family: aqua;
+}
+.au{
+    font-family: au;
+}
+.simple{
+    font-family: simple;
+    font-size: 40px;
+}
