@@ -34,9 +34,54 @@ li > a{
     padding: 16px 20px;
     text-decoration: none;
 }
+input[type=text],[type=date] {
+    display: block;
+    font-size: 20px;
+    width: 480px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    border: 1px solid #000000;
+}
+input[type=submit]{
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    width: 524px;
+    border-radius: 5px;
+    padding: 14px 20px;
+    border: 1px solid #000000;
+    background-color: #E37B40;
+
+}
+input[type=submit]:hover{
+    background-color: indianred;
+}
 .l{
     font-family: "Lobster", serif;
     font-size: 20px;
+}
+@font-face {
+    font-family: simple;
+    src:url('../font/simple.ttf');
+}
+@font-face {
+    font-family: au;
+    src: url("../font/au.otf");
+}
+@font-face {
+    font-family: aqua;
+    src: url("../font/aqua.ttf");
+}
+.aqua{
+    font-family: aqua;
+}
+.au{
+    font-family: au;
+}
+.simple{
+    font-family: simple;
+    font-size: 40px;
 }
 @font-face {
     font-family: simple;
@@ -49,6 +94,16 @@ li > a{
 @font-face {
     font-family: aqua;
     src: url("../../font/aqua.ttf");
+}
+.aqua{
+    font-family: aqua;
+}
+.au{
+    font-family: au;
+}
+.simple{
+    font-family: simple;
+    font-size: 40px;
 }
 .aqua{
     font-family: aqua;

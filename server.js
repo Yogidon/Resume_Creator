@@ -39,12 +39,6 @@ const courseSchema = new mongoose.Schema({
         default: Date.now,
         required : true
     },
-    age : {
-        type:Number,
-        required : true,
-        min:18,
-        max:55
-    },
     gender : {
         type:String,
         required : true,
@@ -54,13 +48,12 @@ const courseSchema = new mongoose.Schema({
 
 const Course = mongoose.model('course', courseSchema);
 
-async function createCourse(name,email,courses,dob,age,gender ){
+async function createCourse(name,email,courses,dob,gender ){
     const course = new Course({
         name : name ,
         email : email,
         course:courses,
         dob:dob,
-        age:age,
         gender:gender
     });
     try{
@@ -76,7 +69,7 @@ app.post('/submit', function (req, res) {
     mongoose.connect('mongodb://localhost/Form_Data')
         .then(() => {
             console.log('Connected to MongoDB');
-            createCourse(req.body.name,req.body.email,req.body.course,req.body.dob,req.body.age,req.body.gender)
+            createCourse(req.body.name,req.body.email,req.body.course,req.body.dob,req.body.gender)
         })
         .catch(err => console.error('Could not connect to mongodb ...', err));
     res.send('Data received:\n' + JSON.stringify(req.body));
