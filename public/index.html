@@ -7,16 +7,18 @@
 </head>
 <body>
 <h1 class="simple">PORTFOLIO CREATOR</h1>
-<header>
-    <nav>
-        <ul class="au">
-            <li><a class="link" href="#">HOME</a></li>
-            <li><a class="link" href="./form/index.html">FORM</a></li>
-            <li><a class="link" href="database/index.html">DATABASE</a></li>
-            <li><a class="link" href="./search/index.html">SEARCH</a></li>
-        </ul>
-    </nav>
-</header>
+<div id="login_container">
+    <form id="login" method="post" action="/">
+        <h3 class="aqua">ENTER DETAILS</h3>
+        <label for="username" class="au">Username</label>
+        <input placeholder="Enter Username" type="text" id="username"><br>
+        <label for="password" class="au" id="ulabel">Password</label>
+        <input placeholder="Enter Password" type="password" id="password">
+        <input id="checkbox" type="checkbox">
+        <button type="submit" id="login_btn" class="l">LOG IN</button>
+        <button type="reset" id="reset" class="l">RESET</button>
+    </form>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="app.js"></script>
 

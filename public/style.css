@@ -1,66 +1,61 @@
 body{
     background-color: #324D5C;
 }
-#container{
-    font-size: 25px;
-    width: 800px;
-    margin: 55px auto 0;
-    background-color: #E37B40;
+
+#login_container{
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #14B278;
+    border-radius: 15px;
     padding: 20px;
-    border: 5px solid black;
-    box-sizing: border-box;
 }
+#login>h3{
+    text-align: center;
+    font-size: 25px;
+    color: orangered;
+}
+
+
 h1{
     text-align: center;
 }
-#form{
-    margin: 0 auto;
-    text-align: center;
+input[type=text],[type=password]{
+    display: inline-block;
+    width: 56%;
+    height: 30px;
+    margin: 20px auto;
+    padding: 4px;
+    font-size: 20px;
 }
-ul{
+button[type=submit]{
     list-style-type: none;
-    overflow: hidden;
-    background-color: cadetblue;
-    margin: 0;
-    padding: 0;
-}
-li{
-    float: left;
-}
-li > a{
+    width: 100px;
+    height: 30px;
+    margin: 20px auto;
     display: block;
-    color: #F0CA4D;
-    background-color: #14B278;
-    padding: 16px 20px;
-    text-decoration: none;
+    font-size: 15px;
 }
-input[type=text],[type=date] {
-    display: block;
-    font-size: 20px;
-    width: 480px;
-    border-radius: 5px;
-    margin: 0 auto;
-    padding: 14px 20px;
-    border: 1px solid #000000;
-}
-input[type=submit]{
-    display: block;
-    margin: 0 auto;
-    font-size: 25px;
-    width: 524px;
-    border-radius: 5px;
-    padding: 14px 20px;
-    border: 1px solid #000000;
-    background-color: #E37B40;
 
+button[type=reset]{
+    list-style-type: none;
+    width: 50px;
+    height: 20px;
+    margin: 20px auto;
+    display: block;
+    font-size: 10px;
 }
-input[type=submit]:hover{
-    background-color: indianred;
+
+label{
+    padding: 5px;
+    font-size: 23px;
+    margin-left: 4px;
+    margin-right: 30px;
 }
-.l{
-    font-family: "Lobster", serif;
-    font-size: 20px;
+#ulabel{
+    margin-right: 39px;
 }
+
 @font-face {
     font-family: simple;
     src:url('../font/simple.ttf');
@@ -82,4 +77,8 @@ input[type=submit]:hover{
 .simple{
     font-family: simple;
     font-size: 40px;
+}
+.l{
+    font-family: "Lobster", serif;
+    font-size: 20px;
 }
