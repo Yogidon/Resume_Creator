@@ -8,20 +8,19 @@
 <body>
 <h1 class="simple">PORTFOLIO CREATOR</h1>
 <div id="login_container">
-    <form id="login" method="post" action="/api/signup">
+    <form id="login" method="post" action="/api/auth">
         <h3 class="aqua">ENTER DETAILS</h3>
         <label for="username" class="au">Username</label>
         <input name="username" placeholder="Enter Username" type="text" id="username"><br>
         <label for="password" class="au" id="ulabel">Password</label>
         <input name="password" placeholder="Enter Password" type="password" id="password">
         <input id="checkbox" type="checkbox">
-        <button type="submit" id="login_btn" class="l">SIGN UP</button>
+        <button type="submit" id="login_btn" class="l">LOG IN</button>
         <button type="reset" id="reset" class="l">RESET</button>
     </form>
-    <a href="auth/index.html"><button>LOG IN</button></a>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="app.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

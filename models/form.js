@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-
-const Form = mongoose.model('Form', new mongoose.Schema({
+const Form = mongoose.model('form_details', new mongoose.Schema({
     name : {type:String,
         required : true,
         minlength:5,
@@ -34,6 +33,6 @@ const Form = mongoose.model('Form', new mongoose.Schema({
         uppercase : true,
         trim : true
     }
-}));
+}),'form_details');
 
 module.exports = Form ;

@@ -1,10 +1,11 @@
+const auth = require('../middleware/auth');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 const Course = require('../models/form');
 
 
-router.get('/:name', async (req, res) => {
+router.get('/:name',auth, async (req, res) => {
     var name = req.param.name;
     Course.find({name:name}, (err,data) => {
         if (err)

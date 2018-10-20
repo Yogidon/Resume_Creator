@@ -1,8 +1,7 @@
-const URL = 'http://localhost:3000/show/';
+const URL = 'http://localhost:3000/api/database';
 
 $(document).ready(function(){
     makeRequest();
-
 });
 
 function makeRequest() {
@@ -10,10 +9,10 @@ function makeRequest() {
         url: URL,
         method: 'GET',
         success: function(data) {
-            console.log(data[0]);
+            console.log(data);
             $('#data').append(
-                '<div>' + data[0].name + '</div>' +
-                '<div>' + data[0].course + '</div>'
+                '<div>' + data.name + '</div>' +
+                '<div>' + data.course + '</div>'
             )
         }
     })

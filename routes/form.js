@@ -1,11 +1,13 @@
+
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
-const Form = require('../models/form');
-var Course = Form;
+const FormModel = require('../models/form');
+const auth = require('../middleware/auth');
+const Form = FormModel;
 
 async function createCourse(name,email,courses,dob,gender ){
-    const course = new Course({
+    const form = new Form({
         name : name ,
         email : email,
         course:courses,
@@ -13,7 +15,7 @@ async function createCourse(name,email,courses,dob,gender ){
         gender:gender
     });
     try{
-        const result = await course.save();
+        const result = await form.save();
         console.log(result);
     }
     catch (e) {
@@ -21,7 +23,7 @@ async function createCourse(name,email,courses,dob,gender ){
     }
 }
 
-router.post('/', function (req, res) {
+router.post('/', auth,function (req, res) {
     mongoose.connect('mongodb://localhost/Form_Data')
         .then(() => {
             console.log('Connected to MongoDB');
